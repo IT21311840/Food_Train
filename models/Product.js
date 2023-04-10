@@ -9,7 +9,7 @@ const ProductSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        required: true,
+        required: true, 
     },
     type: {
         type: String,
@@ -27,14 +27,14 @@ const ProductSchema = new mongoose.Schema({
     },
     size: {
         type: [String],
-        required: true,
+        // required: true,
     },
     prices: {
         type: [{
             size: {type: String, required: true},
             price: {type: Number, required: true}
         }],
-        required: true,
+        // required: true,
     },
     // featured: {
     //     type: Boolean,
