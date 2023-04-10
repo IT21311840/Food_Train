@@ -62,3 +62,35 @@ export const getProducts = async (req, res, next) => {
         next(err)
     }
 }
+
+
+export const countByType = async (req, res, next) => {
+    const types = req.query.types.split(",");
+    try {
+      const list = await Promise.all(
+        types.map((type) => {
+          return Product.countDocuments({ type: type });
+        })
+      );
+      res.status(200).json(list);
+    } catch (err) {
+      next(err);
+    }
+  };
+  
+  
+  export const countByCategory = async (req, res, next) => {
+      try {
+        const breadCount = await Product.countDocuments({ category: "bread" });
+        const beverageCount = await Product.countDocuments({ category: "beverage" });
+        const candyCount = await Product.countDocuments({ category: "candy" });
+    
+        res.status(200).json([
+          { category: "bread", count: breadCount },
+          { category: "beverage", count: beverageCount },
+          { category: "candy", count: candyCount },
+        ]);
+      } catch (err) {
+        next(err);
+      }
+    };

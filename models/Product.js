@@ -7,6 +7,13 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    category: {
+        type: String,
+        required: true,
+    },
+    type: {
+        type: String,
+    },
     date: {
         type: String,
         required: true,
@@ -15,15 +22,18 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    size: {
+    photos: {
         type: String,
+    },
+    size: {
+        type: [String],
         required: true,
     },
-    photos: {
-        type: [String],
-    },
-    price: {
-        type: Number,
+    prices: {
+        type: [{
+            size: {type: String, required: true},
+            price: {type: Number, required: true}
+        }],
         required: true,
     },
     // featured: {
