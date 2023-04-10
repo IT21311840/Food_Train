@@ -7,6 +7,7 @@ import Hero from '../components/Hero/Hero/Hero'
 import Navbar from '../components/Navbar/Navbar'
 import ProductList from '../components/ProductList/ProductList'
 import Services from '../components/Service/Services'
+import Email from '../components/EmailFeed/EmailFeed/Email'
 
 
 function HomePage() {
@@ -17,6 +18,7 @@ function HomePage() {
       <Services />
       <ProductList />
       <AdsPage />
+      <Email />
       <Footer />
     </div>
   )

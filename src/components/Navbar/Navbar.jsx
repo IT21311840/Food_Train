@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './Navbar.css'
+import { Link } from "react-router-dom";
 // import icon from '..//../images/Food train logo.png'
 
   function Navbar() {
@@ -17,11 +18,12 @@ import './Navbar.css'
     };
   return (
     <div className="nav">
-      
+        <Link to="/">
         <div className='logoDiv'>
-          <img src="./images/Food train logo.png" className="logo" style={{
+          
+          <img src="./images/FoodLogo.png" className="logo" style={{
             position:`relative`,
-            width: `20%`,
+            width: `15%`,
             height:`auto`,
             float: 'left'
             
@@ -30,13 +32,13 @@ import './Navbar.css'
           />
           
           <a href="" className="nav_brand">Food Train</a>
-        </div>
+        </div></Link>
         <ul className={active}>
-            <li className="nav_item"><a href="" className="nav_link">Home</a></li>
-            <li className="nav_item"><a href="" className="nav_link">About</a></li>
-            <li className="nav_item"><a href="" className="nav_link">Skills</a></li>
-            <li className="nav_item"><a href="" className="nav_link">Portfolio</a></li>
-            <li className="nav_item"><a href="" className="nav_link">Contact</a></li>
+            <li className="nav_item"><Link to="/" className="nav_link">Home</Link></li>
+            <li className="nav_item"><Link to="/product" className="nav_link">Product</Link></li>
+            <li className="nav_item"><Link to="/blog" className="nav_link">Blog</Link></li>
+            <li className="nav_item"><Link to="/singleBlog" className="nav_link">SingleBlog</Link></li>
+            <li className="nav_item"><Link to="" className="nav_link">Contact</Link></li>
         </ul>
         <div onClick={navToggle} className={ToggleIcon}>   {/**/}
             <div className="line1"></div>

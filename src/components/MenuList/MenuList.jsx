@@ -1,11 +1,11 @@
 import React from 'react'
-import productLists from './productListDB'
-import css from './ProductList.module.css'
-import ProductSingle from './ProductSingle'
+import {menuLists} from './menuListDB'
+import css from './MenuList.module.css'
 import useFetch from '../../hooks/useFetch';
+import MenuSingle from './MenuSingle';
 // import P1 from '../Figma Pic/p1.png'
 
-function ProductList() {
+function MenuList() {
 
     const { data, loading, error } = useFetch("http://localhost:8000/api/product");
         console.log(data)
@@ -14,7 +14,7 @@ function ProductList() {
     <div className={css.container}>
         <div className={css.product}>
             <p className={css.smallText}>Food Train</p>
-            <h1 className={css.ProductHeads}>Favoirte Food</h1>
+            <h1 className={css.ProductHeads}>Our Offer Menu</h1>
             <p className={css.productNote}>Inspired by recipes and creations of world’s best chefs</p>
             <div className={css.row}>
             {
@@ -22,9 +22,9 @@ function ProductList() {
                     "Loading please wait"
                   ) : (
                 <>
-                {data.map((productList,index)=> {
+                {menuLists.map((menuList,index)=> {
                     if(index < 6)
-                        return <ProductSingle productList={productList}/>
+                        return <MenuSingle menuList={menuList}/>
                 })}
             </>)}
             </div>
@@ -51,4 +51,4 @@ function ProductList() {
   )
 }
 
-export default ProductList
+export default MenuList

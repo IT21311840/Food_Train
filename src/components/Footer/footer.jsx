@@ -5,6 +5,12 @@ import './footer.css';
 // import linkedin from "../assets/linkedinimg.png";
 // import instagram from "../assets/instagramimg.png";
 
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 const Footer=()=>{
     return(
         <div classNam="footer">
@@ -50,10 +56,12 @@ const Footer=()=>{
                     <div className="sb__footer-links-div">
                     <h4>Coming Soon</h4>
                         <div className="socialmedia">
-                            <p><img src="./images/Footer/fbimg.png"  alt="" /></p>
-                            <p><img src="./images/Footer/twitterimg.png" alt="" /></p>
-                            <p><img src="./images/Footer/linkedinimg.png" alt="" /></p>
-                            <p><img src="./images/Footer/instagramimg.png" alt="" /></p>
+                            
+                            <p><FacebookIcon style={{ fontSize: 40 }}/></p>
+                            <p><WhatsAppIcon style={{ fontSize: 40 }}/></p>
+                            <p><LinkedInIcon style={{ fontSize: 40 }}/></p>
+                            <p><InstagramIcon style={{ fontSize: 40 }}/></p>
+                            {/* <p><TwitterIcon style={{ fontSize: 40 }}/></p> */}
                     </div>
                     </div>
                 </div>

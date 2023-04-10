@@ -1,11 +1,11 @@
 import React from 'react'
-import productLists from './productListDB'
-import css from './ProductList.module.css'
+import productLists from './listProductDB'
+import css from './ListProduct.module.css'
 import ProductSingle from './ProductSingle'
 import useFetch from '../../hooks/useFetch';
 // import P1 from '../Figma Pic/p1.png'
 
-function ProductList() {
+function ListProduct() {
 
     const { data, loading, error } = useFetch("http://localhost:8000/api/product");
         console.log(data)
@@ -23,7 +23,6 @@ function ProductList() {
                   ) : (
                 <>
                 {data.map((productList,index)=> {
-                    if(index < 6)
                         return <ProductSingle productList={productList}/>
                 })}
             </>)}
@@ -51,4 +50,4 @@ function ProductList() {
   )
 }
 
-export default ProductList
+export default ListProduct

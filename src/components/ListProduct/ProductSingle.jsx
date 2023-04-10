@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import css from './ProductList.module.css'
+import css from './ListProduct.module.css'
 // import P1 from '../Figma Pic/p1.png'
 
 function ProductSingle({productList}) {
@@ -18,7 +18,7 @@ function ProductSingle({productList}) {
         // <div className={css.row}>
                 <div className={css.col3}>
                     <div className={css.colContainer}>
-                        <img src={productList.photos} alt="" className='img-fluid' style={{ height: "200px", width: "200px" }} />
+                        <img src={productList.photos} alt="" className='img-fluid' style={{ height: "150px", width: "150px" }} />
                         <h3>{productList.title} </h3>
                         <h2>Price Rs.{newPrice.map((s,index) => {
                             if(s.size === size){
