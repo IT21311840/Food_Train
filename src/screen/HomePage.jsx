@@ -7,18 +7,19 @@ import Hero from '../components/Hero/Hero/Hero'
 import Navbar from '../components/Navbar/Navbar'
 import ProductList from '../components/ProductList/ProductList'
 import Services from '../components/Service/Services'
-import Email from '../components/EmailFeed/EmailFeed/Email'
+import Sahla from '../components/Saliha/Sahla'
+
 
 
 function HomePage() {
   return (
     <div>
+      <Sahla />
       <Navbar />
       <Hero />
       <Services />
       <ProductList />
       <AdsPage />
-      <Email />
       <Footer />
     </div>
   )
