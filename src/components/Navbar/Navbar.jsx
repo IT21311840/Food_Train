@@ -38,7 +38,7 @@ import { Link } from "react-router-dom";
             <li className="nav_item"><Link to="/product" className="nav_link">Product</Link></li>
             <li className="nav_item"><Link to="/blog" className="nav_link">Blog</Link></li>
             <li className="nav_item"><Link to="/contactUs" className="nav_link">Contact Us</Link></li>
-            <li className="nav_item"><Link to="" className="nav_link">About</Link></li>
+            <li className="nav_item"><Link to="/aboutUs" className="nav_link">About Us</Link></li>
         </ul>
         <div onClick={navToggle} className={ToggleIcon}>   {/**/}
             <div className="line1"></div>

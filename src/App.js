@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BlogPage from './screen/BlogPage';
 import SingleBlogPage from './screen/SingleBlogPage';
 import ContactUsPage from './screen/ContactUsPage';
+import AboutUsPage from './screen/AboutUsPage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path='/blog' element={<BlogPage/>}/>
             <Route path='/singleBlog/:id' element={<SingleBlogPage/>}/>
             <Route path='/contactUs' element={<ContactUsPage/>}/>
+            <Route path='/aboutUs' element={<AboutUsPage/>}/>
         </Routes>
       </div>
     </Router>
