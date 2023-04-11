@@ -8,12 +8,14 @@ import Navbar from '../components/Navbar/Navbar'
 import ProductList from '../components/ProductList/ProductList'
 import Services from '../components/Service/Services'
 import Sahla from '../components/Saliha/Sahla'
+import Asiff from '../components/Mufeel/Asiff'
 
 
 
 function HomePage() {
   return (
     <div>
+      <Asiff />
       <Sahla />
       <Navbar />
       <Hero />
