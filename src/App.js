@@ -5,6 +5,8 @@ import ProductPage from './screen/ProductPage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BlogPage from './screen/BlogPage';
 import SingleBlogPage from './screen/SingleBlogPage';
+import ContactUsPage from './screen/ContactUsPage';
+
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
             <Route path='/' element={<HomePage/>}/>
             <Route path='/product' element={<ProductPage/>}/>
             <Route path='/blog' element={<BlogPage/>}/>
-            <Route path='/singleBlog' element={<SingleBlogPage/>}/>
+            <Route path='/singleBlog/:id' element={<SingleBlogPage/>}/>
+            <Route path='/contactUs' element={<ContactUsPage/>}/>
         </Routes>
       </div>
     </Router>

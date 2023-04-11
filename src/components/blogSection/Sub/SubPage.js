@@ -8,7 +8,7 @@ function SubPage() {
       <div>
       {
         data.map(Data=>{
-            return <div><Sub Data={Data}/> </div>
+            return <div key={Data.id}><Sub Data={Data}/> </div>
         })
       }
     </div>

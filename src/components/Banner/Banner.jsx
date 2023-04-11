@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css';
 // import bannerPic from '..//../images/chicken.png'
+import { Link } from "react-router-dom";
 
 const Banner = () => {
 
@@ -14,8 +15,9 @@ const Banner = () => {
         <h1>FAST DELIVERY</h1>
         <p>Buy any food using coupons code when doing </p>
         <p>online shopping</p>
-        <button>Order Now!  </button>{/* <button style={buttonStyle}>Order Now!</button> */}
-
+        <Link to="/product">
+          <button>Order Now!  </button>{/* <button style={buttonStyle}>Order Now!</button> */}
+        </Link>
         <div className='image'>
           <img src="./images/chicken.png" className="logo1" style={{
           position:`relative`,

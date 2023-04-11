@@ -11,53 +11,47 @@ export const menuListsTitle = [
 export const menuLists = [
     {
         "categoryTitle": "Buger",
-        "offerTag": "Hot",
+        "offerTag": 10,
         "title": "BANNANA LEAF",
         "price": "800",
         "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
     },
     {
-        "categoryTitle": "Pizzasss",
-        "offerTag": "low",
+        "categoryTitle": "Pizzas",
+        "offerTag": 10,
         "title": "Apple LEAF",
         "price": "1200",
         "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
     },
 
     {
-        "categoryTitle": "Pizzasss",
-        "offerTag": "low",
+        "categoryTitle": "Pizzas",
+        "offerTag": 18,
         "title": "Apple LEAF",
         "price": "1200",
         "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
     },
     {
-        "categoryTitle": "Pizzasss",
-        "offerTag": "low",
-        "title": "Apple LEAF",
-        "price": "1200",
+        "categoryTitle": "Drinks",
+        "offerTag": 50,
+        "title": "ICE MILO",
+        "price": "250",
         "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
     },
     {
-        "categoryTitle": "Pizzasss",
-        "offerTag": "low",
-        "title": "Apple LEAF",
-        "price": "1200",
+        "categoryTitle": "Salads",
+        "offerTag": 40,
+        "title": "Veg Salads",
+        "price": "800",
         "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
     },
     {
-        "categoryTitle": "Pizzasss",
-        "offerTag": "low",
-        "title": "Apple LEAF",
-        "price": "1200",
+        "categoryTitle": "Drinks",
+        "offerTag": 20,
+        "title": "Mango juice",
+        "price": "400",
         "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
     },
-    {
-        "categoryTitle": "Pizzasss",
-        "offerTag": "low",
-        "title": "Apple LEAF",
-        "price": "1200",
-        "description":"Dressed with leaf lettuce and tomatoes on a toasted..."
-    },
+    
     
 ]

@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     max-width: 1360px;
-    flex-direction: row1;
+    flex-direction: column;
     flex-wrap: wrap; 
     margin: 4rem auto;
 }
